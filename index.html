@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page 🚀</h1>
+    <button id="toggleMode">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <!-- Section 1: Registration Form -->
+  <section>
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label>Name: <input type="text" id="regName"></label>
+      <span class="error" id="regNameError"></span><br>
+
+      <label>Email: <input type="text" id="regEmail"></label>
+      <span class="error" id="regEmailError"></span><br>
+
+      <label>Password: <input type="password" id="regPassword"></label>
+      <span class="error" id="regPasswordError"></span><br>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Section 2: Login Form -->
+  <section>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label>Email: <input type="text" id="loginEmail"></label>
+      <span class="error" id="loginEmailError"></span><br>
+
+      <label>Password: <input type="password" id="loginPassword"></label>
+      <span class="error" id="loginPasswordError"></span><br>
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- Section 3: Counter Game -->
+  <section>
+    <h2>Counter Game 🎮</h2>
+    <p>Clicks: <span id="counter">0</span></p>
+    <button id="incrementBtn">Click Me!</button>
+  </section>
+
+  <!-- Section 4: FAQ Accordion -->
+  <section>
+    <h2>FAQ ❓</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is this page?</h3>
+      <p class="faq-answer">An interactive demo project with HTML, CSS, and JS.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">How was it built?</h3>
+      <p class="faq-answer">Using event listeners, DOM manipulation, and custom validation.</p>
+    </div>
+  </section>
+
+  <!-- Section 5: Tabbed Interface -->
+  <section>
+    <h2>Tabbed Content 📑</h2>
+    <div class="tabs">
+      <button class="tab-btn" data-tab="1">Tab 1</button>
+      <button class="tab-btn" data-tab="2">Tab 2</button>
+      <button class="tab-btn" data-tab="3">Tab 3</button>
+    </div>
+    <div class="tab-content" id="tab-1">This is content for Tab 1.</div>
+    <div class="tab-content" id="tab-2">This is content for Tab 2.</div>
+    <div class="tab-content" id="tab-3">This is content for Tab 3.</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

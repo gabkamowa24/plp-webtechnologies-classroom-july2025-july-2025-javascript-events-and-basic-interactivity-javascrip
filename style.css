@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #222;
+  color: #eee;
+}
+
+/* FAQ Styling */
+.faq-answer {
+  display: none;
+  margin-left: 10px;
+}
+
+/* Tabs */
+.tab-content {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+}
+.tab-content.active {
+  display: block;
+}
